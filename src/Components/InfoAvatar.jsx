@@ -175,7 +175,7 @@ const InfoAvatar = ({avatar , colorFondo, ColorLetra}) => {
                margin: 0px 5px;
                background-color: ${colorFondo};
                color: ${ColorLetra};
-              `}>{blog === null ? 'Not info' : blog}</p>
+              `}>{blog === null || blog === ''  ? 'Not info' : blog}</p>
            </div>
            <div className="ubicacion" css={css`
                 background-color: ${colorFondo};
